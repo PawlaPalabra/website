@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — PawlaPalabra</title>
+<meta name="description" content="How the PawlaPalabra language-learning app collects, uses and protects your personal data.">
+<style>
+  :root {
+    --bg: #fffaf6;
+    --surface: #ffffff;
+    --text: #23201e;
+    --muted: #6b625c;
+    --accent: #d9662a;
+    --line: #ecdfd6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17140f;
+      --surface: #201c17;
+      --text: #f2ece7;
+      --muted: #a89e97;
+      --accent: #f28950;
+      --line: #332c25;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  h2:first-of-type { margin-top: 1.8rem; }
+  p, li { margin: .7rem 0; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--accent); }
+  .updated { color: var(--muted); font-size: .95rem; margin: 0 0 1.5rem; }
+  .lede { font-size: 1.05rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: .25rem 1.1rem;
+    margin: 1.2rem 0;
+  }
+  .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  /* Below ~34rem a three-column legal-basis table can only be read by dragging it
+     sideways, so stack each row into a labelled block instead. */
+  @media (max-width: 34rem) {
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    tr {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: .35rem .9rem;
+      margin-bottom: .8rem;
+    }
+    td { display: block; border: 0; padding: .45rem 0; }
+    td + td { border-top: 1px solid var(--line); }
+    td::before {
+      content: attr(data-label);
+      display: block;
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: .15rem;
+    }
+    td:first-child { font-weight: 650; }
+  }
+  footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.2rem; }
+  strong { font-weight: 650; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PawlaPalabra Privacy Policy</h1>
+  <p class="updated">Last updated: 1 September 2026</p>
+
+  <p class="lede">PawlaPalabra is a small language-learning app. This page explains, in
+  plain language, what it stores about you, why, and how to get rid of it.</p>
+
+  <h2>1. Who is responsible for your data</h2>
+  <p>PawlaPalabra is developed and operated by <strong>Roman Neviantsev</strong>, an
+  individual developer based in Spain, acting as the <em>data controller</em> under the
+  EU General Data Protection Regulation (GDPR).</p>
+  <p>Contact: <a href="mailto:privacy@pawlapalabra.com">privacy@pawlapalabra.com</a></p>
+  <p>This policy covers the PawlaPalabra mobile app and its backend API at
+  <code>api.pawlapalabra.com</code>.</p>
+
+  <h2>2. What we collect</h2>
+  <p><strong>Your account.</strong> You sign in with Apple or Google. We never see or
+  store your password. Your provider passes us, and we store:</p>
+  <ul>
+    <li>your <strong>email address</strong>;</li>
+    <li>your <strong>name</strong> as your provider reports it (if it reports none, we
+      use the part of your email before the <code>@</code>);</li>
+    <li>the <strong>URL of your profile picture</strong>, if your provider supplies one —
+      the image itself stays on your provider's servers;</li>
+    <li>a <strong>stable identifier</strong> from your provider, used to recognise you on
+      later sign-ins.</li>
+  </ul>
+  <p><strong>What you create and learn.</strong> The vocabulary lists you create or
+  follow, the translations and examples you add, any corrections you make to existing
+  entries, and your learning progress: repetition level and next-review date per item,
+  daily targets, current streak, counters for words learned and repeated today, and when
+  you last practised.</p>
+  <p><strong>Your device's time zone.</strong> The app sends its IANA time zone (for
+  example <code>Europe/Madrid</code>) when it loads your profile. It exists for one
+  reason: to decide where <em>your</em> day ends, so a streak and a daily goal do not
+  reset at someone else's midnight. It is optional — if it is missing, we keep whatever
+  we had.</p>
+  <p><strong>Ordinary server logs.</strong> Our servers automatically record technical
+  request data such as IP address, timestamp and the endpoint called. These keep the
+  service running and secure, and are short-lived.</p>
+
+  <h2>3. What we do not collect</h2>
+  <div class="card">
+    <ul>
+      <li><strong>No third-party analytics.</strong> No Firebase, no Google Analytics, no
+        Sentry, no advertising or attribution SDK.</li>
+      <li><strong>No advertising</strong>, and no tracking across other apps or websites.</li>
+      <li><strong>No location, camera, microphone, photos, contacts, calendar or health
+        data.</strong> The app requests no such permission.</li>
+      <li>We do not buy personal data about you from anyone.</li>
+    </ul>
+  </div>
+
+  <h2>4. Why we use it, and on what legal basis</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>What</th><th>Why</th><th>GDPR legal basis</th></tr></thead>
+      <tbody>
+        <tr><td data-label="What">Account data</td><td data-label="Why">Create and maintain your account; tell your data apart from other users'</td><td data-label="GDPR legal basis">Art. 6(1)(b) — performance of a contract with you</td></tr>
+        <tr><td data-label="What">Learning content and progress</td><td data-label="Why">Provide the actual product: your lists, your spaced repetition, your streak</td><td data-label="GDPR legal basis">Art. 6(1)(b)</td></tr>
+        <tr><td data-label="What">Time zone</td><td data-label="Why">Roll your daily goal and streak over at your local midnight</td><td data-label="GDPR legal basis">Art. 6(1)(b)</td></tr>
+        <tr><td data-label="What">Server logs</td><td data-label="Why">Keep the service available, diagnose faults, detect abuse</td><td data-label="GDPR legal basis">Art. 6(1)(f) — legitimate interest in a working, secure service</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>We do not use your data to make automated decisions with legal or similarly
+  significant effects, and we do not profile you for advertising.</p>
+
+  <h2>5. Who else processes your data</h2>
+  <p>The list is short deliberately. Each acts as our <em>processor</em>, under contract,
+  and only on our instructions:</p>
+  <ul>
+    <li><strong>Auth0 (Okta, Inc.)</strong> — sign-in and identity. Our tenant is hosted
+      in the <strong>European Union</strong>.</li>
+    <li><strong>Amazon Web Services (AWS)</strong> — hosting for the application and its
+      database, in an <strong>EU region</strong>.</li>
+    <li><strong>Apple</strong> and <strong>Google</strong> — only as the identity provider
+      you choose to sign in with. They tell us who you are; they are not told what you
+      study.</li>
+  </ul>
+  <p>We do not sell your personal data, and we do not share it for advertising or for
+  anyone else's marketing.</p>
+
+  <h2>6. International transfers</h2>
+  <p>Your data is stored and processed in the European Union. Auth0's parent company is
+  based in the United States, so limited administrative access from outside the EEA is
+  possible; that is covered by the European Commission's Standard Contractual Clauses
+  together with the relevant supplementary safeguards.</p>
+
+  <h2>7. How long we keep it</h2>
+  <p>For as long as you have an account. Delete your account and we delete your account
+  record, your lists and translations, your progress and your overrides from our live
+  database. <strong>Deletion is immediate and cannot be undone</strong> — there is no
+  restore. Residual copies may persist briefly in encrypted backups and in short-lived
+  server logs before they expire on their normal cycle.</p>
+  <p>Deleting your PawlaPalabra account does not delete your Apple or Google account. To
+  remove PawlaPalabra's access on their side, use Apple's <em>Sign in with Apple</em>
+  settings or Google's <em>Third-party apps</em> settings.</p>
+
+  <h2>8. Your rights</h2>
+  <p>Under the GDPR you may ask us to:</p>
+  <ul>
+    <li><strong>access</strong> the personal data we hold about you, and receive a copy;</li>
+    <li><strong>correct</strong> anything inaccurate;</li>
+    <li><strong>erase</strong> your data (Art. 17) — the fastest route is
+      <strong>Profile → Delete account</strong> in the app, which does this yourself,
+      immediately;</li>
+    <li><strong>port</strong> your data to another service in a machine-readable format;</li>
+    <li><strong>restrict</strong> or <strong>object to</strong> processing based on our
+      legitimate interests.</li>
+  </ul>
+  <p>Write to <a href="mailto:privacy@pawlapalabra.com">privacy@pawlapalabra.com</a>. We
+  answer within one month. We may need to confirm that the request comes from the account
+  holder before acting on it.</p>
+  <p>If you think we have handled your data badly, you can complain to your national data
+  protection authority. In Spain that is the <strong>Agencia Española de Protección de
+  Datos (AEPD)</strong>, <a href="https://www.aepd.es">www.aepd.es</a>.</p>
+
+  <h2>9. Age</h2>
+  <p>PawlaPalabra is not directed to children. You must be <strong>16 or older</strong> to
+  create an account. We do not knowingly collect personal data from anyone under 16; if we
+  learn that we have, we delete it. (Some EU countries set a lower threshold — Spain's is
+  14 — but we apply 16 everywhere.)</p>
+
+  <h2>10. Security</h2>
+  <p>All traffic between the app and our servers runs over HTTPS. The API rejects any
+  request without a valid, unexpired token issued to you. Access to the production
+  database is restricted to the application itself. No system is perfect, but we do not
+  store passwords or payment details at all, which removes the two things most worth
+  stealing.</p>
+
+  <h2>11. If you are in the United States</h2>
+  <p>We do not sell your personal information, and we do not share it for cross-context
+  behavioural advertising, as those terms are used in the California Consumer Privacy Act
+  and comparable state laws. The rights in section 8 are available to you as well — use
+  the same address.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If we change what we collect or why, we update this page and move the date at the
+  top. Material changes will also be announced in the app.</p>
+
+  <footer>
+    <p>PawlaPalabra — Roman Neviantsev, Spain ·
+    <a href="mailto:privacy@pawlapalabra.com">privacy@pawlapalabra.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
