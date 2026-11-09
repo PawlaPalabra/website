@@ -36,7 +36,7 @@
     font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
   }
-  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 1.5rem; }
   h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -.02em; }
   h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
   p { margin: .7rem 0; }
@@ -55,11 +55,18 @@
     padding: .25rem 1.1rem;
     margin: 1.2rem 0;
   }
+  .hero { display: block; width: 180px; height: auto; margin: 0 auto 1.2rem; }
+  .learned { text-align: center; margin: 2rem 0 1.5rem; }
+  .learned img { display: block; width: 130px; height: auto; margin: 0 auto .4rem; }
+  .learned p { margin: 0 auto; max-width: 26rem; }
   footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.2rem; }
+  footer p { margin-bottom: 0; }
 </style>
 </head>
 <body>
 <main>
+  <img class="hero" src="/images/pawla-book.png" width="180" height="193"
+       alt="Pawla the puppy in round glasses, reading a Spanish textbook">
   <h1>How spaced repetition works</h1>
 
   <p class="lede"><strong>Spaced repetition</strong> is an evidence-based learning
@@ -92,8 +99,12 @@
     </table>
   </div>
 
-  <p>After the 5th review the word is <strong>learned</strong>, and it no longer comes
-  back for repetition.</p>
+  <div class="learned">
+    <img src="/images/pawla-medal.png" width="130" height="130"
+         alt="Pawla the puppy smiling, wearing a ¡Buen trabajo! medal">
+    <p>After the 5th review the word is <strong>learned</strong>, and it no longer comes
+    back for repetition.</p>
+  </div>
 
   <div class="card">
     <p><strong>Made a mistake?</strong> If you get a word wrong during a session, it goes
