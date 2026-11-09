@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spaced Repetition — PawlaPalabra</title>
+<meta name="description" content="How PawlaPalabra uses spaced repetition to decide when each word comes back for review.">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<meta name="theme-color" content="#F28950">
+<link rel="icon" href="/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #fffaf6;
+    --surface: #ffffff;
+    --text: #23201e;
+    --muted: #6b625c;
+    --accent: #d9662a;
+    --line: #ecdfd6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17140f;
+      --surface: #201c17;
+      --text: #f2ece7;
+      --muted: #a89e97;
+      --accent: #f28950;
+      --line: #332c25;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  p { margin: .7rem 0; }
+  a { color: var(--accent); }
+  .lede { font-size: 1.05rem; }
+  strong { font-weight: 650; }
+  .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  td.gap { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: .25rem 1.1rem;
+    margin: 1.2rem 0;
+  }
+  footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.2rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>How spaced repetition works</h1>
+
+  <p class="lede"><strong>Spaced repetition</strong> is an evidence-based learning
+  technique, usually done with flashcards. New and difficult words come up often, while
+  words you already know come up less and less. This uses the <em>spacing effect</em>:
+  we remember things better when reviews are spread out over time than when they are
+  crammed together.</p>
+
+  <p>It works best when you need to learn many items and keep them for good, which makes
+  it a natural fit for building vocabulary in a new language. Every review also tests
+  you, and recalling a word yourself makes it stick far better than just reading it
+  again. PawlaPalabra takes care of the schedule, so you only need to show up when your
+  words are due.</p>
+
+  <h2>The schedule in PawlaPalabra</h2>
+  <p>Every word climbs the same ladder. After each session without mistakes, it moves up
+  one stage and the wait until its next review gets longer:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Stage</th><th>Session</th><th>Next review in</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>You learn the word</td><td class="gap">1 day</td></tr>
+        <tr><td>1</td><td>1st review</td><td class="gap">3 days</td></tr>
+        <tr><td>2</td><td>2nd review</td><td class="gap">7 days</td></tr>
+        <tr><td>3</td><td>3rd review</td><td class="gap">14 days</td></tr>
+        <tr><td>4</td><td>4th review</td><td class="gap">30 days</td></tr>
+        <tr><td>5</td><td>5th review</td><td class="gap">Learned</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>After the 5th review the word is <strong>learned</strong>, and it no longer comes
+  back for repetition.</p>
+
+  <div class="card">
+    <p><strong>Made a mistake?</strong> If you get a word wrong during a session, it goes
+    back to the beginning of the ladder and comes back tomorrow. It then climbs again from
+    stage 0.</p>
+  </div>
+
+  <p>That is why the app sometimes tells you there is nothing to repeat yet: your words
+  are simply waiting for their next review day.</p>
+
+  <footer>
+    <p><a href="/">PawlaPalabra</a> · Questions? <a href="mailto:support@pawlapalabra.com">support@pawlapalabra.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
